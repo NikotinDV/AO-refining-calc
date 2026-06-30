@@ -81,6 +81,8 @@ function updateCalc() {
                 col.querySelector('.rawPrice').value = 0;
                 col.querySelector('.matPrice').value = 0;
                 col.querySelector('.rrr').value = 36.7;
+                const sellPriceInput = col.querySelector('.sellPrice');
+                if (sellPriceInput) sellPriceInput.value = 0;
 
         // Снимаем чекбоксы
             const focusCheck = col.querySelector('.useFocus');
