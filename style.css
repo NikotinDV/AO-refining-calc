@@ -1,0 +1,209 @@
+body { font-family: 'Segoe UI', Tahoma, sans-serif; background: #121212; color: #e0e0e0; padding: 40px; }
+.table-container { display: flex; gap: 20px; justify-content: center; }
+
+.tier-column {
+    background: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+
+.tier-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 7px 7px 0 0;
+}
+
+.reset-btn {
+    background: transparent;
+    border: none;
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+    cursor: pointer;
+    padding: 2px 6px;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.reset-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #ff5252; /* Краснеет при наведении */
+}
+
+.input-group {
+    padding: 12px 15px;
+    border-bottom: 1px solid #2a2a2a;
+}
+
+.input-group label {
+    display: block;
+    font-size: 11px;
+    color: #888;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #444;
+    color: #fff;
+    font-size: 16px;
+    padding: 4px 0;
+    outline: none;
+}
+
+input:focus { border-bottom-color: #00d4ff; }
+
+.sub-info {
+    font-size: 11px;
+    color: #aaa;
+    margin-top: 6px;
+    line-height: 1.4;
+}
+
+.main-val {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00d4ff;
+}
+
+.total-box { background: #252525; }
+.highlight { background: #2a2a2a; }
+.target-box { border-bottom: none; padding-bottom: 20px; }
+
+.t4-bg { background: #1e3c5a; } /* Зеленый */
+.t5-bg { background: #5a1e1e; } /* Синий */
+.t6-bg { background: #e07c0de6; } /* Красный */
+
+.check-row {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.check-row input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+input:disabled {
+    color: #00d4ff;
+    border-bottom-style: dashed;
+    cursor: not-allowed;
+}
+
+/* Цвета заголовков */
+.t7-bg { background: #d4af37; color: #000; } /* Желтый/Золотой */
+.t8-bg { background: #ffffff; color: #000; } /* Белый */
+
+/* Подсветка зависимых полей */
+.linked-value {
+    color: #ffd700 !important;
+    font-style: italic;
+    border-bottom-color: #ffd700 !important;
+}
+
+/* Сетка для всех колонок */
+.table-container {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap; /* Чтобы на маленьких экранах колонки переносились */
+    justify-content: center;
+}
+
+.useFocus {
+    accent-color: #00d4ff; /* Синий цвет фокуса в стиле Albion */
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+}
+
+/* Можно добавить подсветку поля RRR, когда включен фокус */
+input.rrr:disabled {
+    background: rgba(0, 212, 255, 0.1);
+    color: #00d4ff;
+    font-weight: bold;
+}
+
+.profit-box {
+    background: #1a1a1a;
+    border-top: 2px solid #444;
+    border-radius: 0 0 8px 8px;
+}
+
+.profit-box label {
+    color: #00d4ff;
+    font-weight: bold;
+}
+
+.profitPerc {
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.profitAbs {
+    color: #eee;
+}
+.author-footer {
+    width: 100%;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+    color: #666;
+    font-size: 13px;
+    border-top: 1px solid #2a2a2a;
+}
+
+.author-footer a {
+    color: #00d4ff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.author-footer a:hover {
+    color: #ffd700; /* Золотистый цвет при наведении */
+    text-decoration: underline;
+}
+
+.note-container {
+    max-width: 250px;
+    margin: 0 auto 15px 0; /* Прижмет к левому краю над таблицей */
+    padding: 0;
+}
+
+.note-container label {
+    display: block;
+    font-size: 12px;
+    color: #888;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+#tab-note {
+    width: 100%;
+    background: transparent; /* Убираем темную подложку */
+    border: none;
+    border-bottom: 1px solid #444; /* Аккуратное подчеркивание точками */
+    border-radius: 0;
+    color: #888; /* Делаем цвет текста приглушенным */
+    padding: 4px 0;
+    font-size: 13px;
+    text-align: left; /* Текст теперь слева */
+    outline: none;
+    box-sizing: border-box;
+    transition: all 0.2s ease;
+}
+
+#tab-note:focus {
+    color: #00d4ff;
+    border-bottom-color: #00d4ff; /* Линия становится синей */
+}
