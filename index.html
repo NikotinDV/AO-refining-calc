@@ -10,198 +10,214 @@
     <div class="note-container">
         <!-- <label for="tab-note">Заметка </label> -->
         <input type="text" id="tab-note">
+        <button id="add-to-history" title="Сохранить текущий расчет в историю">➕ История</button>
     </div>
 
     <div class="table-container">
-    <div class="tier-column" id="t4">
-        <div class="tier-header t4-bg">
-            <span>Tier 4</span>
-            <button class="reset-btn" title="Сбросить колонку">✕</button>
-        </div>
-        <div class="input-group">
-            <label>Возврат (%)</label>
-            <div class="check-row">
-                <input type="number" class="rrr" value="36.7" step="0.1">
-                <input type="checkbox" class="useFocus" title="Использовать фокус">
+        <div class="tier-column" id="t4">
+            <div class="tier-header t4-bg">
+                <span>Tier 4</span>
+                <button class="reset-btn" title="Сбросить колонку">✕</button>
             </div>
-        </div>
-        <div class="input-group">
-            <label>Цена сырья (1шт)</label>
-            <input type="number" class="rawPrice" value="0">
-            <div class="sub-info">Закупка: <span class="rawQty">0</span> шт.<br>Сумма: <span class="rawTotal">0</span></div>
-        </div>
-        <div class="input-group">
-            <label>Цена материала (1шт)</label>
-            <input type="number" class="matPrice" value="0">
-            <div class="sub-info">Закупка: <span class="matQty">0</span> шт.<br>Сумма: <span class="matTotal">0</span></div>
-        </div>
-        <div class="input-group total-box"><label>Затраты</label><div class="main-val finalSum">0</div></div>
-        <div class="input-group highlight"><label>Себестоимость 1шт</label><div class="main-val costPerUnit">0</div></div>
-        <div class="input-group target-box"><label>Цель (шт)</label><input type="number" class="target" value="0"></div>
-        <div class="input-group profit-box">
-            <label>Цена продажи (рынок)</label>
-            <input type="number" class="sellPrice" value="0">
-            <div class="sub-info">
-                Чистая прибыль: <span class="profitAbs">0</span><br>
-                Рентабельность: <strong class="profitPerc">0%</strong>
+            <div class="input-group">
+                <label>Возврат (%)</label>
+                <div class="check-row">
+                    <input type="number" class="rrr" value="36.7" step="0.1">
+                    <input type="checkbox" class="useFocus" title="Использовать фокус">
+                </div>
             </div>
-        </div>
-    </div>
-
-    <div class="tier-column" id="t5">
-        <div class="tier-header t5-bg">
-            <span>Tier 5</span>
-            <button class="reset-btn" title="Сбросить колонку">✕</button>
-        </div>
-        <div class="input-group">
-            <label>Возврат (%)</label>
-            <div class="check-row">
-                <input type="number" class="rrr" value="36.7" step="0.1">
-                <input type="checkbox" class="useFocus" title="Использовать фокус">
+            <div class="input-group">
+                <label>Цена сырья (1шт)</label>
+                <input type="number" class="rawPrice" value="0">
+                <div class="sub-info">Закупка: <span class="rawQty">0</span> шт.<br>Сумма: <span class="rawTotal">0</span></div>
             </div>
-        </div>
-        <div class="input-group">
-            <label>Цена сырья (1шт)</label>
-            <input type="number" class="rawPrice" value="0">
-            <div class="sub-info">Закупка: <span class="rawQty">0</span> шт.<br>Сумма: <span class="rawTotal">0</span></div>
-        </div>
-        <div class="input-group">
-            <label>Цена материала (1шт)</label>
-            <div class="check-row">
+            <div class="input-group">
+                <label>Цена материала (1шт)</label>
                 <input type="number" class="matPrice" value="0">
-                <input type="checkbox" class="usePrev" title="Использовать себестоимость T4">
+                <div class="sub-info">Закупка: <span class="matQty">0</span> шт.<br>Сумма: <span class="matTotal">0</span></div>
             </div>
-            <div class="sub-info">Закупка: <span class="matQty">0</span> шт.<br>Сумма: <span class="rawTotal"></span><span class="matTotal">0</span></div>
+            <div class="input-group total-box"><label>Затраты</label><div class="main-val finalSum">0</div></div>
+            <div class="input-group highlight"><label>Себестоимость 1шт</label><div class="main-val costPerUnit">0</div></div>
+            <div class="input-group target-box"><label>Цель (шт)</label><input type="number" class="target" value="0"></div>
+            <div class="input-group profit-box">
+                <label>Цена продажи (рынок)</label>
+                <input type="number" class="sellPrice" value="0">
+                <div class="sub-info">
+                    Чистая прибыль: <span class="profitAbs">0</span><br>
+                    Рентабельность: <strong class="profitPerc">0%</strong>
+                </div>
+            </div>
         </div>
-        <div class="input-group total-box"><label>Затраты</label><div class="main-val finalSum">0</div></div>
-        <div class="input-group highlight"><label>Себестоимость 1шт</label><div class="main-val costPerUnit">0</div></div>
-        <div class="input-group target-box"><label>Цель (шт)</label><input type="number" class="target" value="0"></div>
-        <div class="input-group profit-box">
-            <label>Цена продажи (рынок)</label>
-            <input type="number" class="sellPrice" value="0">
-            <div class="sub-info">
-                Чистая прибыль: <span class="profitAbs">0</span><br>
-                Рентабельность: <strong class="profitPerc">0%</strong>
+
+        <div class="tier-column" id="t5">
+            <div class="tier-header t5-bg">
+                <span>Tier 5</span>
+                <button class="reset-btn" title="Сбросить колонку">✕</button>
+            </div>
+            <div class="input-group">
+                <label>Возврат (%)</label>
+                <div class="check-row">
+                    <input type="number" class="rrr" value="36.7" step="0.1">
+                    <input type="checkbox" class="useFocus" title="Использовать фокус">
+                </div>
+            </div>
+            <div class="input-group">
+                <label>Цена сырья (1шт)</label>
+                <input type="number" class="rawPrice" value="0">
+                <div class="sub-info">Закупка: <span class="rawQty">0</span> шт.<br>Сумма: <span class="rawTotal">0</span></div>
+            </div>
+            <div class="input-group">
+                <label>Цена материала (1шт)</label>
+                <div class="check-row">
+                    <input type="number" class="matPrice" value="0">
+                    <input type="checkbox" class="usePrev" title="Использовать себестоимость T4">
+                </div>
+                <div class="sub-info">Закупка: <span class="matQty">0</span> шт.<br>Сумма: <span class="rawTotal"></span><span class="matTotal">0</span></div>
+            </div>
+            <div class="input-group total-box"><label>Затраты</label><div class="main-val finalSum">0</div></div>
+            <div class="input-group highlight"><label>Себестоимость 1шт</label><div class="main-val costPerUnit">0</div></div>
+            <div class="input-group target-box"><label>Цель (шт)</label><input type="number" class="target" value="0"></div>
+            <div class="input-group profit-box">
+                <label>Цена продажи (рынок)</label>
+                <input type="number" class="sellPrice" value="0">
+                <div class="sub-info">
+                    Чистая прибыль: <span class="profitAbs">0</span><br>
+                    Рентабельность: <strong class="profitPerc">0%</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="tier-column" id="t6">
+            <div class="tier-header t6-bg">
+                <span>Tier 6</span>
+                <button class="reset-btn" title="Сбросить колонку">✕</button>
+            </div>
+            <div class="input-group">
+                <label>Возврат (%)</label>
+                <div class="check-row">
+                    <input type="number" class="rrr" value="36.7" step="0.1">
+                    <input type="checkbox" class="useFocus" title="Использовать фокус">
+                </div>
+            </div>
+            <div class="input-group">
+                <label>Цена сырья (1шт)</label>
+                <input type="number" class="rawPrice" value="0">
+                <div class="sub-info">Закупка: <span class="rawQty">0</span> шт.<br>Сумма: <span class="rawTotal">0</span></div>
+            </div>
+            <div class="input-group">
+                <label>Цена материала (1шт)</label>
+                <div class="check-row">
+                    <input type="number" class="matPrice" value="0">
+                    <input type="checkbox" class="usePrev" title="Использовать себестоимость T5">
+                </div>
+                <div class="sub-info">Закупка: <span class="matQty">0</span> шт.<br>Сумма: <span class="matTotal">0</span></div>
+            </div>
+            <div class="input-group total-box"><label>Затраты</label><div class="main-val finalSum">0</div></div>
+            <div class="input-group highlight"><label>Себестоимость 1шт</label><div class="main-val costPerUnit">0</div></div>
+            <div class="input-group target-box"><label>Цель (шт)</label><input type="number" class="target" value="0"></div>
+            <div class="input-group profit-box">
+                <label>Цена продажи (рынок)</label>
+                <input type="number" class="sellPrice" value="0">
+                <div class="sub-info">
+                    Чистая прибыль: <span class="profitAbs">0</span><br>
+                    Рентабельность: <strong class="profitPerc">0%</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="tier-column" id="t7">
+            <div class="tier-header t7-bg">
+                <span>Tier 7</span>
+                <button class="reset-btn" title="Сбросить колонку">✕</button>
+            </div>
+            <div class="input-group">
+                <label>Возврат (%)</label>
+                <div class="check-row">
+                    <input type="number" class="rrr" value="36.7" step="0.1">
+                    <input type="checkbox" class="useFocus" title="Использовать фокус">
+                </div>
+            </div>
+            <div class="input-group">
+                <label>Цена сырья (1шт)</label>
+                <input type="number" class="rawPrice" value="0">
+                <div class="sub-info">Закупка: <span class="rawQty">0</span> шт.<br>Сумма: <span class="rawTotal">0</span></div>
+            </div>
+            <div class="input-group">
+                <label>Цена материала (1шт)</label>
+                <div class="check-row">
+                    <input type="number" class="matPrice" value="0">
+                    <input type="checkbox" class="usePrev" title="Использовать себестоимость T6">
+                </div>
+                <div class="sub-info">Закупка: <span class="matQty">0</span> шт.<br>Сумма: <span class="matTotal">0</span></div>
+            </div>
+            <div class="input-group total-box"><label>Затраты</label><div class="main-val finalSum">0</div></div>
+            <div class="input-group highlight"><label>Себестоимость 1шт</label><div class="main-val costPerUnit">0</div></div>
+            <div class="input-group target-box"><label>Цель (шт)</label><input type="number" class="target" value="0"></div>
+            <div class="input-group profit-box">
+                <label>Цена продажи (рынок)</label>
+                <input type="number" class="sellPrice" value="0">
+                <div class="sub-info">
+                    Чистая прибыль: <span class="profitAbs">0</span><br>
+                    Рентабельность: <strong class="profitPerc">0%</strong>
+                </div>
+            </div>
+        </div>
+
+        <div class="tier-column" id="t8">
+            <div class="tier-header t8-bg">
+                <span>Tier 8</span>
+                <button class="reset-btn" title="Сбросить колонку">✕</button>
+            </div>
+            <div class="input-group">
+                <label>Возврат (%)</label>
+                <div class="check-row">
+                    <input type="number" class="rrr" value="36.7" step="0.1">
+                    <input type="checkbox" class="useFocus" title="Использовать фокус">
+                </div>
+            </div>
+            <div class="input-group">
+                <label>Цена сырья (1шт)</label>
+                <input type="number" class="rawPrice" value="0">
+                <div class="sub-info">Закупка: <span class="rawQty">0</span> шт.<br>Сумма: <span class="rawTotal">0</span></div>
+            </div>
+            <div class="input-group">
+                <label>Цена материала (1шт)</label>
+                <div class="check-row">
+                    <input type="number" class="matPrice" value="0">
+                    <input type="checkbox" class="usePrev" title="Использовать себестоимость T7">
+                </div>
+                <div class="sub-info">Закупка: <span class="matQty">0</span> шт.<br>Сумма: <span class="matTotal">0</span></div>
+            </div>
+            <div class="input-group total-box"><label>Затраты</label><div class="main-val finalSum">0</div></div>
+            <div class="input-group highlight"><label>Себестоимость 1шт</label><div class="main-val costPerUnit">0</div></div>
+            <div class="input-group target-box"><label>Цель (шт)</label><input type="number" class="target" value="0"></div>
+            <div class="input-group profit-box">
+                <label>Цена продажи (рынок)</label>
+                <input type="number" class="sellPrice" value="0">
+                <div class="sub-info">
+                    Чистая прибыль: <span class="profitAbs">0</span><br>
+                    Рентабельность: <strong class="profitPerc">0%</strong>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="tier-column" id="t6">
-        <div class="tier-header t6-bg">
-            <span>Tier 6</span>
-            <button class="reset-btn" title="Сбросить колонку">✕</button>
+    <div class="history-container">
+        <div style="color: #888; font-size: 12px; margin-bottom: 10px; text-transform: uppercase;">
+        📜 Сохраненные
         </div>
-        <div class="input-group">
-            <label>Возврат (%)</label>
-            <div class="check-row">
-                <input type="number" class="rrr" value="36.7" step="0.1">
-                <input type="checkbox" class="useFocus" title="Использовать фокус">
+        <div class="history-header-row-mini">
+            <span>Дата</span>
+            <span>Имя</span>
+            <span>Действия</span>
+        </div>
+        <div id="history-log">
             </div>
-        </div>
-        <div class="input-group">
-            <label>Цена сырья (1шт)</label>
-            <input type="number" class="rawPrice" value="0">
-            <div class="sub-info">Закупка: <span class="rawQty">0</span> шт.<br>Сумма: <span class="rawTotal">0</span></div>
-        </div>
-        <div class="input-group">
-            <label>Цена материала (1шт)</label>
-            <div class="check-row">
-                <input type="number" class="matPrice" value="0">
-                <input type="checkbox" class="usePrev" title="Использовать себестоимость T5">
-            </div>
-            <div class="sub-info">Закупка: <span class="matQty">0</span> шт.<br>Сумма: <span class="matTotal">0</span></div>
-        </div>
-        <div class="input-group total-box"><label>Затраты</label><div class="main-val finalSum">0</div></div>
-        <div class="input-group highlight"><label>Себестоимость 1шт</label><div class="main-val costPerUnit">0</div></div>
-        <div class="input-group target-box"><label>Цель (шт)</label><input type="number" class="target" value="0"></div>
-        <div class="input-group profit-box">
-            <label>Цена продажи (рынок)</label>
-            <input type="number" class="sellPrice" value="0">
-            <div class="sub-info">
-                Чистая прибыль: <span class="profitAbs">0</span><br>
-                Рентабельность: <strong class="profitPerc">0%</strong>
-            </div>
-        </div>
     </div>
 
-    <div class="tier-column" id="t7">
-        <div class="tier-header t7-bg">
-            <span>Tier 7</span>
-            <button class="reset-btn" title="Сбросить колонку">✕</button>
-        </div>
-        <div class="input-group">
-            <label>Возврат (%)</label>
-            <div class="check-row">
-                <input type="number" class="rrr" value="36.7" step="0.1">
-                <input type="checkbox" class="useFocus" title="Использовать фокус">
-            </div>
-        </div>
-        <div class="input-group">
-            <label>Цена сырья (1шт)</label>
-            <input type="number" class="rawPrice" value="0">
-            <div class="sub-info">Закупка: <span class="rawQty">0</span> шт.<br>Сумма: <span class="rawTotal">0</span></div>
-        </div>
-        <div class="input-group">
-            <label>Цена материала (1шт)</label>
-            <div class="check-row">
-                <input type="number" class="matPrice" value="0">
-                <input type="checkbox" class="usePrev" title="Использовать себестоимость T6">
-            </div>
-            <div class="sub-info">Закупка: <span class="matQty">0</span> шт.<br>Сумма: <span class="matTotal">0</span></div>
-        </div>
-        <div class="input-group total-box"><label>Затраты</label><div class="main-val finalSum">0</div></div>
-        <div class="input-group highlight"><label>Себестоимость 1шт</label><div class="main-val costPerUnit">0</div></div>
-        <div class="input-group target-box"><label>Цель (шт)</label><input type="number" class="target" value="0"></div>
-        <div class="input-group profit-box">
-            <label>Цена продажи (рынок)</label>
-            <input type="number" class="sellPrice" value="0">
-            <div class="sub-info">
-                Чистая прибыль: <span class="profitAbs">0</span><br>
-                Рентабельность: <strong class="profitPerc">0%</strong>
-            </div>
-        </div>
-    </div>
-
-    <div class="tier-column" id="t8">
-        <div class="tier-header t8-bg">
-            <span>Tier 8</span>
-            <button class="reset-btn" title="Сбросить колонку">✕</button>
-        </div>
-        <div class="input-group">
-            <label>Возврат (%)</label>
-            <div class="check-row">
-                <input type="number" class="rrr" value="36.7" step="0.1">
-                <input type="checkbox" class="useFocus" title="Использовать фокус">
-            </div>
-        </div>
-        <div class="input-group">
-            <label>Цена сырья (1шт)</label>
-            <input type="number" class="rawPrice" value="0">
-            <div class="sub-info">Закупка: <span class="rawQty">0</span> шт.<br>Сумма: <span class="rawTotal">0</span></div>
-        </div>
-        <div class="input-group">
-            <label>Цена материала (1шт)</label>
-            <div class="check-row">
-                <input type="number" class="matPrice" value="0">
-                <input type="checkbox" class="usePrev" title="Использовать себестоимость T7">
-            </div>
-            <div class="sub-info">Закупка: <span class="matQty">0</span> шт.<br>Сумма: <span class="matTotal">0</span></div>
-        </div>
-        <div class="input-group total-box"><label>Затраты</label><div class="main-val finalSum">0</div></div>
-        <div class="input-group highlight"><label>Себестоимость 1шт</label><div class="main-val costPerUnit">0</div></div>
-        <div class="input-group target-box"><label>Цель (шт)</label><input type="number" class="target" value="0"></div>
-        <div class="input-group profit-box">
-            <label>Цена продажи (рынок)</label>
-            <input type="number" class="sellPrice" value="0">
-            <div class="sub-info">
-                Чистая прибыль: <span class="profitAbs">0</span><br>
-                Рентабельность: <strong class="profitPerc">0%</strong>
-            </div>
-        </div>
-    </div>
-</div>
-
-    <script src="script.js"></script>
+    <script src="storage.js"></script>
+    <script src="history.js"></script>
+    <script src="main.js"></script>
 <footer class="author-footer">
      Dev by
     <a href="https://t.me/eeeeeeend" target="_blank">Nikotin</a>
